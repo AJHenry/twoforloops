@@ -1,7 +1,7 @@
 
 ## Preview
 
-Need to commit first in order to properly have a pages
+[Live Demo Here](https://ajhenry.github.io/twoforloops/)
 
 ## Download and Installation
 
