@@ -1,3 +1,12 @@
+## TODO
+
+1. Fill in template
+2. Modify colors
+3. Create portfolio
+4. add FAQ
+5. Create contact system
+6. set up email for us@twoforloops.com
+
 
 ## Preview
 
