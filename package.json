@@ -1,41 +1,23 @@
 {
-    "title": "twoforloops",
-    "name": "twoforloops",
-    "version": "4.0.0-beta.2",
-    "description": "Website for twoforloops.",
-    "keywords": [
-        "css",
-        "sass",
-        "html",
-        "responsive"
-    ],
-    "homepage": "https://twoforloops.com",
-    "license": "MIT",
-    "author": "twoforloops",
-    "contributors": [
-        "Andrew Henry",
-        "Nick Smider"
-    ],
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/AJHenry/twoforloops.git"
-    },
-    "dependencies": {
-        "bootstrap": "^4.0.0-beta.2",
-        "font-awesome": "4.7.0",
-        "gulp-cli": "^2.0.0",
-        "jquery": "^3.2.1",
-        "jquery.easing": "^1.4.1",
-        "magnific-popup": "^1.1.0",
-        "scrollreveal": "3.3.6"
-    },
-    "devDependencies": {
-        "browser-sync": "2.18.13",
-        "gulp": "^3.9.1",
-        "gulp-clean-css": "3.9.0",
-        "gulp-header": "1.8.9",
-        "gulp-rename": "^1.2.2",
-        "gulp-sass": "^3.1.0",
-        "gulp-uglify": "3.0.0"
-    }
+  "name": "clean",
+  "version": "1.0.0",
+  "description": "The clean landing page for twoforloops",
+  "main": "index.js",
+  "dependencies": {
+    "animejs": "^2.2.0",
+    "bootstrap": "^4.0.0-beta.3",
+    "jquery": "^3.2.1",
+    "node-sass": "^4.7.2",
+    "popper.js": "^1.12.9"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass --watch scss -o css"
+  },
+  "keywords": [
+    "twoforloops"
+  ],
+  "author": "Andrew Henry and Nick Smider",
+  "license": "MIT"
 }
