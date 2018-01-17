@@ -1,12 +1,12 @@
-#slogan{
-    opacity:0;  
-    font-size: 2rem; 
-    
-}
 #heading{
     opacity:0;  
-    font-size:4rem;
+    font-size:2rem;
 }
+#slogan{
+    opacity:0;  
+    font-size: 1rem;
+}
+
 html,
 body {
   height: 100%;
@@ -18,3 +18,47 @@ body {
     
     color: #fff;
 }
+
+
+// Extra small devices (portrait phones, less than 576px)
+// No media query since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { 
+    #heading{  
+        font-size:2.5rem;
+    }
+    #slogan{ 
+        font-size: 1.25rem;
+    }
+ }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { 
+    #heading{  
+        font-size:3rem;
+    }
+    #slogan{ 
+        font-size: 1.5rem;
+    }
+ }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { 
+    #heading{  
+        font-size: 3.5rem;
+    }
+    #slogan{ 
+        font-size: 1.75rem;
+    }
+ }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { 
+    #heading{  
+        font-size: 4rem;
+    }
+    #slogan{ 
+        font-size: 2rem;
+    }
+ }
