@@ -7,3 +7,19 @@
 	transition: opacity 0.5s ease;
 	opacity: 1.0;
 }
+
+body{
+    margin-top: -60px;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: $font-stack;
+  background: $primary-color;
+  color: $secondary-color;
+}
+
+#container{
+    height: 100%;
+}

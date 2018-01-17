@@ -1,6 +1,7 @@
 
 (function(){
 
+    /*
 
 //Used for on page loading
 anime({
@@ -65,5 +66,7 @@ anime({
         easing: 'easeOutExpo'
       }
   });
+
+  */
 
 })();

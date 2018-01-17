@@ -1,21 +1,16 @@
 #heading{
-    opacity:0;  
     font-size:2rem;
 }
 #slogan{
-    opacity:0;  
     font-size: 1rem;
 }
 
-html,
-body {
-  height: 100%;
-  font-family: 'Open Sans', sans-serif;
-  background: #433e90;
-}
+
 
 .landing{
-    color: #fff;
+    color: $secondary-color;
+    font-weight: 100;
+    
 }
 
 .scroll-icons{
@@ -24,12 +19,24 @@ body {
 
 #scroll-icon{
     font-size: 3rem;
-    opacity: 0;
+    animation-duration: 0.75s;
+    animation-name: bounce;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
 
 #scroll-text{
-    opacity: 0;
 }
+
+@keyframes bounce {
+    from {
+      transform: translateY(5px);
+    }
+  
+    to {
+        transform: translateY(-5px);
+    }
+  }
 
 
 // Extra small devices (portrait phones, less than 576px)
@@ -66,10 +73,10 @@ body {
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) { 
     #heading{  
-        font-size: 3.5rem;
+        font-size: 5rem;
     }
     #slogan{ 
-        font-size: 1.75rem;
+        font-size: 2.5rem;
     }
     .scroll {
         display: block;
@@ -79,10 +86,10 @@ body {
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) { 
     #heading{  
-        font-size: 4rem;
+        font-size: 6rem;
     }
     #slogan{ 
-        font-size: 2rem;
+        font-size: 3rem;
     }
     .scroll {
         display: block;
