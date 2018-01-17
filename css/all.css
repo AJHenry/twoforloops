@@ -1,0 +1,16 @@
+#slogan {
+  opacity: 0;
+  font-size: 2rem; }
+
+#heading {
+  opacity: 0;
+  font-size: 4rem; }
+
+html,
+body {
+  height: 100%;
+  font-family: 'Open Sans', sans-serif;
+  background: #433e90; }
+
+.landing {
+  color: #fff; }
