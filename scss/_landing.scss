@@ -1,0 +1,91 @@
+#heading{
+    opacity:0;  
+    font-size:2rem;
+}
+#slogan{
+    opacity:0;  
+    font-size: 1rem;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: 'Open Sans', sans-serif;
+  background: #433e90;
+}
+
+.landing{
+    color: #fff;
+}
+
+.scroll-icons{
+    padding-bottom:20px;
+}
+
+#scroll-icon{
+    font-size: 3rem;
+    opacity: 0;
+}
+
+#scroll-text{
+    opacity: 0;
+}
+
+
+// Extra small devices (portrait phones, less than 576px)
+// No media query since this is the default in Bootstrap
+.scroll {
+    display: none;
+}
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { 
+    #heading{  
+        font-size:2.5rem;
+    }
+    #slogan{ 
+        font-size: 1.25rem;
+    }
+    .scroll {
+        display: block;
+    }
+ }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { 
+    #heading{  
+        font-size:3rem;
+    }
+    #slogan{ 
+        font-size: 1.5rem;
+    }
+    .scroll {
+        display: block;
+    }
+ }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { 
+    #heading{  
+        font-size: 3.5rem;
+    }
+    #slogan{ 
+        font-size: 1.75rem;
+    }
+    .scroll {
+        display: block;
+    }
+ }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { 
+    #heading{  
+        font-size: 4rem;
+    }
+    #slogan{ 
+        font-size: 2rem;
+    }
+    .scroll {
+        display: block;
+    }
+ }
+

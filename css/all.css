@@ -15,26 +15,47 @@ body {
 .landing {
   color: #fff; }
 
+.scroll-icons {
+  padding-bottom: 20px; }
+
+#scroll-icon {
+  font-size: 3rem;
+  opacity: 0; }
+
+#scroll-text {
+  opacity: 0; }
+
+.scroll {
+  display: none; }
+
 @media (min-width: 576px) {
   #heading {
     font-size: 2.5rem; }
   #slogan {
-    font-size: 1.25rem; } }
+    font-size: 1.25rem; }
+  .scroll {
+    display: block; } }
 
 @media (min-width: 768px) {
   #heading {
     font-size: 3rem; }
   #slogan {
-    font-size: 1.5rem; } }
+    font-size: 1.5rem; }
+  .scroll {
+    display: block; } }
 
 @media (min-width: 992px) {
   #heading {
     font-size: 3.5rem; }
   #slogan {
-    font-size: 1.75rem; } }
+    font-size: 1.75rem; }
+  .scroll {
+    display: block; } }
 
 @media (min-width: 1200px) {
   #heading {
     font-size: 4rem; }
   #slogan {
-    font-size: 2rem; } }
+    font-size: 2rem; }
+  .scroll {
+    display: block; } }

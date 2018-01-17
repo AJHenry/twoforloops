@@ -1,46 +1,90 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="favicon.ico">
 
-    <title>Starter Template for Bootstrap</title>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" href="favicon.ico">
 
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+  <title>Starter Template for Bootstrap</title>
 
-    <!-- Custom styles for this template -->
-    <link href="css/all.css" rel="stylesheet">
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> 
+  <!-- Custom styles for this template -->
+  <link href="css/all.css" rel="stylesheet">
 
-  </head>
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.4/js/all.js"></script>
 
-  <body>
-    <section role="landing" class="landing container h-100 d-flex d-flex align-items-center justify-content-center">
+</head>
 
-        <div class="main-body">
-            <div id="heading" class="text-center">
-              <span>TWO<strong>FOR</strong>LOOPS</span>
-            </div>
-            <div id="slogan" class="text-center">
-                <span>A new way of doing the same old things</span>
-              </div>
-          </div>
+<body>
+  <!-- Landing Page -->
+  <section role="landing" class="landing container h-100 d-flex flex-column justify-content-between">
 
-        </section><!-- /.container -->
+    <!-- Placeholder Class (Ugly fix for flex) -->
+    <div class=""></div>
 
-    <!-- Bootstrap core JavaScript
+    <div class="">
+      <!-- Heading and slogan -->
+      <div id="heading" class="text-center">
+        <span>TWO
+          <strong>FOR</strong>LOOPS</span>
+      </div>
+      <div id="slogan" class="text-center">
+        <span>A new way of doing the same old things</span>
+      </div>
+    </div>
+
+    <!-- Scroll Icon -->
+    <div class="text-center scroll-icons">
+      <div id="scroll-icon">
+          <i class="fas fa-angle-down"></i>
+      </div>
+
+      <div id="scroll-text" class="scroll">
+        Scroll to learn more
+      </div>
+    </div>
+  </section>
+
+
+  <!-- About Page -->
+  <section role="about" class="about h-100">
+  </section>
+
+  <!-- About Page -->
+  <section role="about" class="about">
+
+  </section>
+
+
+
+
+
+
+
+
+  <!-- Bootstrap core JavaScript
     ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="vendor/popper.js/dist/popper.min.js"></script>
-    <script src="vendor/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="vendor/animejs/anime.min.js"></script>
-    <script src="js/main.js"></script>
-  </body>
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="vendor/popper.js/dist/popper.min.js"></script>
+  <script src="vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="vendor/animejs/anime.min.js"></script>
+  <script src="vendor/scrolltrigger/ScrollTrigger.min.js"></script>
+  <script>
+      document.addEventListener('DOMContentLoaded', function(){
+        var trigger = new ScrollTrigger();
+      });
+      </script>
+  <!-- Custom script -->
+  <script src="js/main.js"></script>
+</body>
+
 </html>
