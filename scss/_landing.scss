@@ -1,16 +1,6 @@
-#heading{
-    font-size:2rem;
-}
-#slogan{
-    font-size: 1rem;
-}
-
-
 
 .landing{
-    color: $secondary-color;
     font-weight: 100;
-    
 }
 
 .scroll-icons{
@@ -25,8 +15,6 @@
     animation-direction: alternate;
 }
 
-#scroll-text{
-}
 
 @keyframes bounce {
     from {
@@ -38,61 +26,15 @@
     }
   }
 
+.transparent{
+  background-color: transparent;
+}
+
 
 // Extra small devices (portrait phones, less than 576px)
 // No media query since this is the default in Bootstrap
 .scroll {
     display: none;
 }
-// Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) { 
-    #heading{  
-        font-size:2.5rem;
-    }
-    #slogan{ 
-        font-size: 1.25rem;
-    }
-    .scroll {
-        display: block;
-    }
- }
 
-// Medium devices (tablets, 768px and up)
-@media (min-width: 768px) { 
-    #heading{  
-        font-size:3rem;
-    }
-    #slogan{ 
-        font-size: 1.5rem;
-    }
-    .scroll {
-        display: block;
-    }
- }
-
-// Large devices (desktops, 992px and up)
-@media (min-width: 992px) { 
-    #heading{  
-        font-size: 5rem;
-    }
-    #slogan{ 
-        font-size: 2.5rem;
-    }
-    .scroll {
-        display: block;
-    }
- }
-
-// Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) { 
-    #heading{  
-        font-size: 6rem;
-    }
-    #slogan{ 
-        font-size: 3rem;
-    }
-    .scroll {
-        display: block;
-    }
- }
 

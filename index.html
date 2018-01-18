@@ -8,10 +8,10 @@
   <meta name="author" content="">
   <link rel="icon" href="favicon.ico">
 
-  <title>Starter Template for Bootstrap</title>
+  <title>Template</title>
 
   <!-- Bootstrap core CSS -->
-  <link href="vendor/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="vendor/bootstrap/dist/css/modifiedbootstrap.css" rel="stylesheet">
 
   <!-- Custom styles for this template -->
   <link href="css/all.css" rel="stylesheet">
@@ -26,61 +26,57 @@
 </head>
 
 <body>
-  <nav data-scroll="toggle(.landingScrollIn, .landingScrollOut) once" class="navbar navbar-expand-lg navbar-light bg-light landingScrollStart">
-    <a class="navbar-brand" href="#">Navbar</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-      aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+  <!-- Navbar -->
+  <nav id="navbar" data-scroll="toggle(.landingScrollIn, .landingScrollOut) once" class="navbar navbar-dark  navbar-expand-lg fixed-top landingScrollStart transparent">
+    <div class="container">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigate" aria-controls="navbarSupportedContent"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Home
-            <span class="sr-only">(current)</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
-            aria-expanded="false">
-            Dropdown
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Something else here</a>
-          </div>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" href="#">Disabled</a>
-        </li>
-      </ul>
-      <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-      </form>
+      <!-- Brand Badge -->
+      <a class="navbar-brand" href="#home">Logo</a>
+
+      <!-- Links -->
+      <div class="collapse navbar-collapse justify-content-end" id="navigate">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#home">Home
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#services">Services
+            </a>
+            <li class="nav-item">
+              <a class="nav-link" href="#faq">FAQ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact
+              </a>
+            </li>
+        </ul>
+      </div>
     </div>
   </nav>
 
   <div id="container">
     <!-- Landing Page -->
-    <section role="landing" class="landing container h-100 d-flex flex-column justify-content-between">
+    <section role="landing" id="home" class="landing container h-100 d-flex flex-column justify-content-between">
 
       <!-- Placeholder Class (Ugly fix for flex) -->
       <div class=""></div>
 
       <div class="">
         <!-- Heading and slogan -->
-        <div data-scroll="toggle(.landingHeaderIn, .landingHeaderOut) once" id="heading" class="text-center landingHeaderStart">
-          <span>TWO
-            <strong>FOR</strong>LOOPS</span>
+        <div data-scroll="toggle(.landingHeaderIn, .landingHeaderOut) once" id="heading" class="heading text-center landingHeaderStart">
+          <span>MY<strong>SITE</strong>NAME</span>
         </div>
-        <div data-scroll="toggle(.landingSloganIn, .landingSloganOut) once" id="slogan" class="text-center landingSloganStart">
-          <span>A new way of doing the same old things</span>
+        <div data-scroll="toggle(.landingSloganIn, .landingSloganOut) once" id="slogan" class="subheading text-center landingSloganStart">
+          <span>Put the slogan here</span>
         </div>
       </div>
 
@@ -98,25 +94,40 @@
 
 
     <!-- About Page -->
-    <section role="about" class="about h-100">
+    <section role="about" id="about" class="about h-100">
+      <div data-scroll="toggle(.fromBigTopIn, .fromBigTopOut)" class="text-center heading font-weight-light">
+        About
+      </div>
     </section>
 
     <!-- About Page -->
-    <section role="about" class="about">
-
+    <section role="services" id="services" class="services h-100">
+      <div data-scroll="toggle(.fromBigTopIn, .fromBigTopOut)" class="text-center heading font-weight-light">
+        Services
+      </div>
     </section>
+
+    <!-- FAQ Page -->
+    <section role="faq" id="faq" class="services h-100">
+      <div data-scroll="toggle(.fromBigTopIn, .fromBigTopOut)" class="text-center heading font-weight-light">
+        FAQ
+      </div>
+    </section>
+
+    <!-- Contact Page -->
+    <section role="contact" id="contact" class="contact h-100">
+      <div data-scroll="toggle(.fromBigTopIn, .fromBigTopOut)" class="text-center heading font-weight-light">
+        Contact
+      </div>
+    </section>
+
+    <!--End of Body container -->
   </div>
-
-
-
-
-
-
 
   <!-- Bootstrap core JavaScript
     ================================================== -->
   <!-- Placed at the end of the document so the pages load faster -->
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
     crossorigin="anonymous"></script>
   <!--<script src="vendor/popper.js/dist/popper.min.js"></script>-->
   <script src="vendor/bootstrap/dist/js/bootstrap.min.js"></script>

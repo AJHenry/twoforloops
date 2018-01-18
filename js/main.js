@@ -1,3 +1,34 @@
+//Used for smooth scrolling
+$('a[href*="#"]').on('click', function (e) {
+	e.preventDefault();
+
+	$('html, body').animate({
+		scrollTop: $($(this).attr('href')).offset().top
+	}, 500, 'swing');
+});
+
+//Used for cleaner navigation
+$('body').scrollspy({ target: '#navbar' });
+
+
+/**
+ * Listen to scroll to change header opacity class
+ */
+function checkScroll(){
+    var startY = $('.navbar').height() * 2; //The point where the navbar changes in px
+
+    if($(window).scrollTop() > startY){
+        $('.navbar').addClass("navscrolled");
+    }else{
+        $('.navbar').removeClass("navscrolled");
+    }
+}
+
+if($('.navbar').length > 0){
+    $(window).on("scroll load resize", function(){
+        checkScroll();
+    });
+}
 
 (function(){
 

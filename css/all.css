@@ -1,11 +1,4 @@
-#heading {
-  font-size: 2rem; }
-
-#slogan {
-  font-size: 1rem; }
-
 .landing {
-  color: #d4d8d4;
   font-weight: 100; }
 
 .scroll-icons {
@@ -24,40 +17,11 @@
   to {
     transform: translateY(-5px); } }
 
+.transparent {
+  background-color: transparent; }
+
 .scroll {
   display: none; }
-
-@media (min-width: 576px) {
-  #heading {
-    font-size: 2.5rem; }
-  #slogan {
-    font-size: 1.25rem; }
-  .scroll {
-    display: block; } }
-
-@media (min-width: 768px) {
-  #heading {
-    font-size: 3rem; }
-  #slogan {
-    font-size: 1.5rem; }
-  .scroll {
-    display: block; } }
-
-@media (min-width: 992px) {
-  #heading {
-    font-size: 5rem; }
-  #slogan {
-    font-size: 2.5rem; }
-  .scroll {
-    display: block; } }
-
-@media (min-width: 1200px) {
-  #heading {
-    font-size: 6rem; }
-  #slogan {
-    font-size: 3rem; }
-  .scroll {
-    display: block; } }
 
 .invisible {
   transition: opacity 0.5s ease;
@@ -68,17 +32,78 @@
   opacity: 1.0; }
 
 body {
-  margin-top: -60px; }
+  margin-top: 60px;
+  position: relative; }
 
 html,
 body {
   height: 100%;
   font-family: "Roboto", sans-serif, "Ubuntu", sans-serif, "Raleway", sans-serif, "Open Sans", sans-serif;
   background: #433e90;
-  color: #d4d8d4; }
+  color: #a19c9c; }
 
 #container {
   height: 100%; }
+
+.heading {
+  font-size: 2.5rem; }
+
+.subheading {
+  font-size: 1.5rem; }
+
+@media (min-width: 576px) {
+  .heading {
+    font-size: 3rem; }
+  .subheading {
+    font-size: 1.75rem; }
+  .scroll {
+    display: block; } }
+
+@media (min-width: 768px) {
+  .heading {
+    font-size: 4.5rem; }
+  .subheading {
+    font-size: 2.75rem; }
+  .scroll {
+    display: block; } }
+
+@media (min-width: 992px) {
+  .heading {
+    font-size: 5rem; }
+  .subheading {
+    font-size: 3rem; }
+  .scroll {
+    display: block; } }
+
+@media (min-width: 1200px) {
+  .heading {
+    font-size: 6rem; }
+  .subheading {
+    font-size: 3.5rem; }
+  .scroll {
+    display: block; } }
+
+/* Add the below transitions to allow a smooth color change similar to lyft */
+.navbar {
+  -webkit-transition: all 0.6s ease-out;
+  -moz-transition: all 0.6s ease-out;
+  -o-transition: all 0.6s ease-out;
+  -ms-transition: all 0.6s ease-out;
+  transition: all 0.6s ease-out; }
+
+.navbar.navscrolled {
+  background: #326ada; }
+
+.navbar {
+  color: #a19c9c; }
+  .navbar a:hover {
+    color: #d2d2d2; }
+  .navbar a:active {
+    color: #d4d8d4; }
+
+section {
+  margin-top: -60px;
+  padding-top: 60px; }
 
 /**
  * Animations
@@ -114,25 +139,33 @@ body {
   opacity: 0; }
 
 .landingScrollStart {
-  top: 0;
   opacity: 0; }
 
 .landingScrollIn {
-  transition: opacity 2.0s ease 1.0s;
+  transition: opacity 1.0s ease 1.0s;
   opacity: 1; }
 
 .landingScrollOut {
   transition: opacity 1.0s ease;
   opacity: 0; }
 
+.fromBigTopIn {
+  transition: transform 1.0s ease, opacity 1.0s ease;
+  transform: translateY(0px);
+  opacity: 1; }
+
+.fromBigTopOut {
+  opacity: 0;
+  transform: scale(0.75) translateY(100px); }
+
 .fromTopIn {
-  transition: transform 2.0s ease, opacity 2.0s ease;
+  transition: transform 1.0s ease, opacity 1.0s ease;
   transform: translate(0, -20px);
   opacity: 1.0; }
 
 .fromTopOut {
   transition: transform 2.0s ease, opacity 2.0s ease;
-  transform: translate(0, -20px);
+  transform: translate(0, 0);
   opacity: 0.0; }
 
 .fromBottomIn {

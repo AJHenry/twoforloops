@@ -51,12 +51,11 @@
 //Scroll Icon
 
 .landingScrollStart{
-    top:0;
     opacity: 0;
 }
 
 .landingScrollIn{
-    transition: opacity 2.0s ease 1.0s;
+    transition: opacity 1.0s ease 1.0s;
     opacity: 1;
 }
 
@@ -70,12 +69,24 @@
 
 
 
-
+.fromBigTopIn
+ {
+    transition: transform 1.0s ease, opacity 1.0s ease;
+     
+    transform: translateY(0px);
+    opacity: 1;
+ }
+ 
+ .fromBigTopOut
+ {
+     opacity: 0;
+     transform: scale(0.75) translateY(100px);
+ }
 
 
  .fromTopIn
  {
-    transition: transform 2.0s ease, opacity 2.0s ease;
+    transition: transform 1.0s ease, opacity 1.0s ease;
      
     transform: translate(0,-20px);
     opacity: 1.0;
@@ -85,7 +96,7 @@
  {
      transition: transform 2.0s ease, opacity 2.0s ease;
      
-     transform: translate(0,-20px);
+     transform: translate(0,0);
      opacity: 0.0;
  }
  
@@ -141,7 +152,7 @@
  {
      transition: transform 1.0s ease, opacity 1.0s ease;
      
-     transform: scale(1.0,1.0);
+     transform: scale(1.0, 1.0);
      opacity: 1.0;
  }
  
