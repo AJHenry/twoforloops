@@ -39,7 +39,7 @@ html,
 body {
   height: 100%;
   font-family: "Roboto", sans-serif, "Ubuntu", sans-serif, "Raleway", sans-serif, "Open Sans", sans-serif;
-  background: #433e90;
+  background: black;
   color: #a19c9c; }
 
 #container {
@@ -92,7 +92,7 @@ body {
   transition: all 0.6s ease-out; }
 
 .navbar.navscrolled {
-  background: #326ada; }
+  background: black; }
 
 .navbar {
   color: #a19c9c; }
@@ -217,3 +217,14 @@ section {
   transition: transform 1.0s ease, opacity 1.0s ease;
   transform: scale(0.7, 0.7);
   opacity: 0.0; }
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial; }
+
+.title {
+  color: grey;
+  font-size: 18px; }
