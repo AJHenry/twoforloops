@@ -2,145 +2,194 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
-  <link rel="icon" href="favicon.ico">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="favicon.ico">
 
-  <title>Template</title>
+    <title>TWO FOR LOOPS</title>
 
-  <!-- Bootstrap core CSS -->
-  <link href="vendor/bootstrap/dist/css/modifiedbootstrap.css" rel="stylesheet">
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/dist/css/modifiedbootstrap.css" rel="stylesheet">
 
-  <!-- Custom styles for this template -->
-  <link href="css/all.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="css/all.css" rel="stylesheet">
 
-  <!-- Fonts -->
-  <link href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-  <script defer src="https://use.fontawesome.com/releases/v5.0.4/js/all.js"></script>
+
+    <!-- Fonts -->
+    <link href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.4/js/all.js"></script>
 
 </head>
 
 <body>
-  <!-- Navbar -->
-  <nav id="navbar" data-scroll="toggle(.landingScrollIn, .landingScrollOut) once" class="navbar navbar-dark  navbar-expand-lg fixed-top landingScrollStart transparent">
-    <div class="container">
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigate" aria-controls="navbarSupportedContent"
-        aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+    <!-- Navbar -->
+    <nav id="navbar" data-scroll="toggle(.landingScrollIn, .landingScrollOut) once" class="navbar navbar-dark  navbar-expand-md fixed-top landingScrollStart transparent">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigate" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-      <!-- Brand Badge -->
-      <a class="navbar-brand" href="#home">Logo</a>
+            <!-- Brand Badge -->
+            <a class="navbar-brand" href="#home">Logo</a>
 
-      <!-- Links -->
-      <div class="collapse navbar-collapse justify-content-end" id="navigate">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="#home">Home
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#about">About
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#services">Services
-            </a>
-            <li class="nav-item">
-              <a class="nav-link" href="#faq">FAQ</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact
-              </a>
-            </li>
-        </ul>
-      </div>
+            <!-- Links -->
+            <div class="collapse navbar-collapse justify-content-end" id="navigate">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services
+                        </a>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#faq">FAQ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact
+                            </a>
+                        </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="container">
+        <!-- Landing Page -->
+        <section role="landing" id="home" class="landing container h-100 d-flex flex-column justify-content-between">
+
+            <!-- Placeholder Class (Ugly fix for flex) -->
+            <div class=""></div>
+
+            <div class="">
+                <!-- Heading and slogan -->
+                <div data-scroll="toggle(.landingHeaderIn, .landingHeaderOut) once" id="heading" class="heading text-center landingHeaderStart">
+                    <span>TWO<strong>FOR</strong>LOOPS</span>
+                </div>
+                <div data-scroll="toggle(.landingSloganIn, .landingSloganOut) once" id="slogan" class="subheading text-center landingSloganStart">
+                    <span>/*TODO coding pun to make us likeable*/</span>
+                </div>
+            </div>
+
+            <!-- Scroll Icon -->
+            <div data-scroll="toggle(.landingScrollIn, .landingScrollOut) once" class="text-center scroll-icons landingScrollStart">
+
+                <a href="#about">
+                    <div id="scroll-icon" href="#about">
+                        <i class="fas fa-angle-down"></i>
+                    </div>
+                </a>
+                <div id="scroll-text" class="scroll">
+                    Learn more about us.
+                </div>
+            </div>
+            <!-- End Scroll Icon -->
+        </section>
+
+
+        <!-- About Page -->
+        <section role="about" id="about" class="about h-100">
+            <div data-scroll="toggle(.fromBigTopIn, .fromBigTopOut)" class="text-center heading font-weight-light">
+                About Us
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm card h-50">
+                        <h4>Nicholas Smider</h4>
+                        <p class="title">Co-Founder</p>
+                        <p>University of Pittsburgh</p>
+                        <a href="#">
+                            <i class="far fa-address-book"></i>
+                        </a>
+    
+                        <p>
+                            <button>Contact</button>
+                        </p>
+                    </div>
+                    <div class="col-sm card">
+                        <h4>Andrew Henry</h4>
+                        <p class="title">Co-Founder</p>
+                        <p>University of Pittsburgh</p>
+                        <a href="#">
+                            <i class="fas fa-dribbble"></i>
+                        </a>
+    
+                        <p>
+                            <button>Contact</button>
+                        </p>
+                    </div>
+                </div>
+              </div>
+
+
+
+
+            <!-- Scroll Icon -->
+            <div data-scroll="toggle(.landingScrollIn, .landingScrollOut) once" class="text-center scroll-icons landingScrollStart">
+
+                <a href="#services">
+                    <div id="scroll-icon" href="#about">
+                        <i class="fas fa-angle-down"></i>
+                    </div>
+                </a>
+                <div id="scroll-text" class="scroll">
+                    What can we offer you?
+                </div>
+            </div>
+            <!-- End Scroll Icon -->
+        </section>
+
+        <!-- Services Page -->
+        <section role="services" id="services" class="services h-100">
+            <div data-scroll="toggle(.fromBigTopIn, .fromBigTopOut)" class="text-center heading font-weight-light">
+                Services
+            </div>
+        </section>
+
+        <!-- FAQ Page -->
+        <section role="faq" id="faq" class="services h-100">
+            <div data-scroll="toggle(.fromBigTopIn, .fromBigTopOut)" class="text-center heading font-weight-light">
+                FAQ
+            </div>
+        </section>
+
+        <!-- Contact Page -->
+        <section role="contact" id="contact" class="contact h-100">
+            <div data-scroll="toggle(.fromBigTopIn, .fromBigTopOut)" class="text-center heading font-weight-light">
+                Contact
+            </div>
+        </section>
+
+        <!--End of Body container -->
     </div>
-  </nav>
 
-  <div id="container">
-    <!-- Landing Page -->
-    <section role="landing" id="home" class="landing container h-100 d-flex flex-column justify-content-between">
-
-      <!-- Placeholder Class (Ugly fix for flex) -->
-      <div class=""></div>
-
-      <div class="">
-        <!-- Heading and slogan -->
-        <div data-scroll="toggle(.landingHeaderIn, .landingHeaderOut) once" id="heading" class="heading text-center landingHeaderStart">
-          <span>MY<strong>SITE</strong>NAME</span>
-        </div>
-        <div data-scroll="toggle(.landingSloganIn, .landingSloganOut) once" id="slogan" class="subheading text-center landingSloganStart">
-          <span>Put the slogan here</span>
-        </div>
-      </div>
-
-      <!-- Scroll Icon -->
-      <div data-scroll="toggle(.landingScrollIn, .landingScrollOut) once" class="text-center scroll-icons landingScrollStart">
-        <div id="scroll-icon">
-          <i class="fas fa-angle-down"></i>
-        </div>
-
-        <div id="scroll-text" class="scroll">
-          Scroll to learn more
-        </div>
-      </div>
-    </section>
-
-
-    <!-- About Page -->
-    <section role="about" id="about" class="about h-100">
-      <div data-scroll="toggle(.fromBigTopIn, .fromBigTopOut)" class="text-center heading font-weight-light">
-        About
-      </div>
-    </section>
-
-    <!-- About Page -->
-    <section role="services" id="services" class="services h-100">
-      <div data-scroll="toggle(.fromBigTopIn, .fromBigTopOut)" class="text-center heading font-weight-light">
-        Services
-      </div>
-    </section>
-
-    <!-- FAQ Page -->
-    <section role="faq" id="faq" class="services h-100">
-      <div data-scroll="toggle(.fromBigTopIn, .fromBigTopOut)" class="text-center heading font-weight-light">
-        FAQ
-      </div>
-    </section>
-
-    <!-- Contact Page -->
-    <section role="contact" id="contact" class="contact h-100">
-      <div data-scroll="toggle(.fromBigTopIn, .fromBigTopOut)" class="text-center heading font-weight-light">
-        Contact
-      </div>
-    </section>
-
-    <!--End of Body container -->
-  </div>
-
-  <!-- Bootstrap core JavaScript
+    <!-- Bootstrap core JavaScript
     ================================================== -->
-  <!-- Placed at the end of the document so the pages load faster -->
-  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-    crossorigin="anonymous"></script>
-  <!--<script src="vendor/popper.js/dist/popper.min.js"></script>-->
-  <script src="vendor/bootstrap/dist/js/bootstrap.min.js"></script>
-  <script src="vendor/animejs/anime.min.js"></script>
-  <script src="vendor/scrolltrigger/ScrollTrigger.min.js"></script>
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      var trigger = new ScrollTrigger();
-    });
-  </script>
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+    <!--<script src="vendor/popper.js/dist/popper.min.js"></script>-->
+    <script src="vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="vendor/animejs/anime.min.js"></script>
+    <script src="vendor/scrolltrigger/ScrollTrigger.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var trigger = new ScrollTrigger();
+        });
+    </script>
 
-  <!-- Custom script -->
-  <script src="js/main.js"></script>
+    <!-- Custom script -->
+    <script src="js/main.js"></script>
 </body>
 
 </html>

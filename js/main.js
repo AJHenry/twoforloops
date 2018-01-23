@@ -30,6 +30,10 @@ if($('.navbar').length > 0){
     });
 }
 
+$('.nav a').click(function () {
+    $('.navbar-collapse').collapse('hide');
+});
+
 (function(){
 
     /*
