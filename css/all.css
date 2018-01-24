@@ -32,8 +32,10 @@
   opacity: 1.0; }
 
 body {
-  margin-top: 60px;
   position: relative; }
+
+section {
+  padding-top: 60px; }
 
 html,
 body {
@@ -83,27 +85,12 @@ body {
   .scroll {
     display: block; } }
 
-/* Add the below transitions to allow a smooth color change similar to lyft */
-.navbar {
-  -webkit-transition: all 0.6s ease-out;
-  -moz-transition: all 0.6s ease-out;
-  -o-transition: all 0.6s ease-out;
-  -ms-transition: all 0.6s ease-out;
-  transition: all 0.6s ease-out; }
-
 .navbar.navscrolled {
-  background: black; }
+  background: #CC0000;
+  transition: all 0.4s ease-out; }
 
-.navbar {
-  color: #a19c9c; }
-  .navbar a:hover {
-    color: #d2d2d2; }
-  .navbar a:active {
-    color: #d4d8d4; }
-
-section {
-  margin-top: -60px;
-  padding-top: 60px; }
+a {
+  color: #CC0000; }
 
 /**
  * Animations
@@ -228,3 +215,47 @@ section {
 .title {
   color: grey;
   font-size: 18px; }
+
+.navbar-red .navbar-brand {
+  color: #CC0000; }
+  .navbar-red .navbar-brand:focus, .navbar-red .navbar-brand:hover {
+    color: #CC0000; }
+
+.navbar-red .navbar-nav .nav-link {
+  color: rgba(204, 0, 0, 0.5); }
+  .navbar-red .navbar-nav .nav-link:focus, .navbar-red .navbar-nav .nav-link:hover {
+    color: rgba(204, 0, 0, 0.75); }
+  .navbar-red .navbar-nav .nav-link.disabled {
+    color: rgba(204, 0, 0, 0.25); }
+
+.navbar-red .navbar-nav .show > .nav-link,
+.navbar-red .navbar-nav .active > .nav-link,
+.navbar-red .navbar-nav .nav-link.show,
+.navbar-red .navbar-nav .nav-link.active {
+  color: #CC0000; }
+
+.navbar-red .navbar-toggler {
+  color: rgba(204, 0, 0, 0.5);
+  border-color: rgba(204, 0, 0, 0.1); }
+
+.navbar-red .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"); }
+
+.navbar-red .navbar-text {
+  color: rgba(204, 0, 0, 0.5); }
+  .navbar-red .navbar-text a {
+    color: #CC0000; }
+    .navbar-red .navbar-text a:focus, .navbar-red .navbar-text a:hover {
+      color: #CC0000; }
+
+a {
+  color: #CC0000; }
+
+a:hover {
+  color: #CC0000; }
+
+a:active {
+  color: #CC0000; }
+
+a:visited {
+  color: #CC0000; }

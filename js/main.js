@@ -19,8 +19,13 @@ function checkScroll(){
 
     if($(window).scrollTop() > startY){
         $('.navbar').addClass("navscrolled");
+        $('.navbar').addClass("navbar-light");
+        $('.navbar').removeClass("navbar-red");
     }else{
+        $('.navbar').addClass("navbar-red");
         $('.navbar').removeClass("navscrolled");
+        $('.navbar').removeClass("navbar-light");
+
     }
 }
 

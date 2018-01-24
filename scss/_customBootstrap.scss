@@ -1,0 +1,90 @@
+// Required
+@import "vendor/bootstrap/scss/functions";
+@import "vendor/bootstrap/scss/variables";
+@import "vendor/bootstrap/scss/mixins";
+
+
+//Custom reds
+$primary-red: #CC0000;
+$secondary-red: #990000;
+
+//Custom red color for navbar
+$navbar-red-color:                 rgba($primary_red, .5) !default;
+$navbar-red-hover-color:           rgba($primary_red, .75) !default;
+$navbar-red-active-color:          $primary_red !default;
+$navbar-red-disabled-color:        rgba($primary_red, .25) !default;
+$navbar-red-toggler-icon-bg:       str-replace(url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='#{$navbar-dark-color}' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"), "#", "%23") !default;
+$navbar-red-toggler-border-color:  rgba($primary_red, .1) !default;
+
+
+//Custom navbar theme
+// Dark links against a light background
+.navbar-red {
+    .navbar-brand {
+      color: $navbar-red-active-color;
+  
+      @include hover-focus {
+        color: $navbar-red-active-color;
+      }
+    }
+  
+    .navbar-nav {
+      .nav-link {
+        color: $navbar-red-color;
+  
+        @include hover-focus {
+          color: $navbar-red-hover-color;
+        }
+  
+        &.disabled {
+          color: $navbar-red-disabled-color;
+        }
+      }
+  
+      .show > .nav-link,
+      .active > .nav-link,
+      .nav-link.show,
+      .nav-link.active {
+        color: $navbar-red-active-color;
+      }
+    }
+  
+    .navbar-toggler {
+      color: $navbar-red-color;
+      border-color: $navbar-red-toggler-border-color;
+    }
+  
+    .navbar-toggler-icon {
+      background-image: $navbar-red-toggler-icon-bg;
+    }
+  
+    .navbar-text {
+      color: $navbar-red-color;
+      a {
+        color: $navbar-red-active-color;
+  
+        @include hover-focus {
+          color: $navbar-red-active-color;
+        }
+      }
+    }
+  }
+  
+  
+a { 
+  color:$primary-red;
+
+}
+a:hover{
+  color:$primary-red;
+}
+
+a:active{
+  color:$primary-red;
+}
+
+
+a:visited{
+  color:$primary-red;
+}
+
