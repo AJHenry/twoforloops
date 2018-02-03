@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
+    <link rel="icon" href="favicon.ico">
 
-    <title>ReachOut API Demo</title>
+    <title>Transition</title>
 
     <!-- Bootstrap core CSS -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
@@ -65,7 +66,7 @@
                             </div>
 
                             <div class="row justify-content-center">
-                                    <div class="col">
+                                <div class="col">
                                     <p></p>
                                     <button class="call-api btn btn-outline-primary change-page-forward" type="button">
                                         Don't use my location
@@ -92,9 +93,12 @@
             </div>
         </section>
 
-        <section id="cards" class="w-100 d-flex flex-column-reverse justify-content-center transitionInitial">
+        <section id="cards" class="w-100 d-flex flex-column justify-content-center transitionInitial">
             <div class="container">
                 <!-- Heading and slogan -->
+                <div class="spinner text-center">
+                    <i class="fa-5x fas fa-spinner fa-spin"></i>
+                </div>
                 <div id="result-data" class="text-center">
                     <div class="card-columns">
                         <!-- Reference card for jQuery -->
@@ -125,6 +129,12 @@
                                     </a>
                                 </ul>
                             </div>
+
+                            <!-- Reference for no data -->
+                            <div class="no-data">
+                                <h3>Unfortunely, no results were found</h3>
+                                <small>Try searching for broader terms or a different location</small>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -144,7 +154,7 @@
         crossorigin="anonymous"></script>
 
     <!-- Google Maps -->
-    <script type="text/javascript" src="https://maps.google.com/maps/api/js?key=AIzaSyCxZ5lMgLBUjo3SFO_C73F3BWxkyUB6_gM "></script>
+    <script type="text/javascript" src="http://maps.google.com/maps/api/js?key=AIzaSyCxZ5lMgLBUjo3SFO_C73F3BWxkyUB6_gM "></script>
     <!-- Custom scripts -->
     <script src="js/main.js"></script>
     <script src="js/api.js"></script>
