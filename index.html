@@ -16,12 +16,8 @@
     <!-- Custom styles for this template -->
     <link href="css/all.css" rel="stylesheet">
 
-
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <script defer src="https://use.fontawesome.com/releases/v5.0.4/js/all.js"></script>
 
 </head>
@@ -74,10 +70,12 @@
             <div class="">
                 <!-- Heading and slogan -->
                 <div data-scroll="toggle(.landingHeaderIn, .landingHeaderOut) once" id="heading" class="heading text-center landingHeaderStart">
-                    <span>TWO<strong>FOR</strong>LOOPS</span>
+                    <span>TWO
+                        <strong class="color-red">FOR</strong>LOOPS</span>
                 </div>
                 <div data-scroll="toggle(.landingSloganIn, .landingSloganOut) once" id="slogan" class="subheading text-center landingSloganStart">
-                    <span>/*TODO coding pun to make us likeable*/</span>
+                    <span>/*
+                        <span class="color-red">TODO</span> coding pun to make us likeable*/</span>
                 </div>
             </div>
 
@@ -90,7 +88,7 @@
                     </div>
                 </a>
                 <div id="scroll-text" class="scroll">
-                    Learn more about us.
+                    Learn more about us
                 </div>
             </div>
             <!-- End Scroll Icon -->
@@ -98,24 +96,25 @@
 
 
         <!-- About Page -->
-        <section role="about" id="about" class="about h-100">
-            <div data-scroll="toggle(.fromBigTopIn, .fromBigTopOut) once" class="text-center heading font-weight-light">
+        <section role="about" id="about" class="about h-100 d-flex flex-column justify-content-between">
+            <!-- Header -->
+            <div data-scroll="toggle(.fromBigTopIn, .fromBigTopOut) once" class="text-center subheading font-weight-light">
                 About Us
             </div>
+            <!-- Middle Section -->
             <div class="container">
                 <div class="row">
-                    <div class="col-sm card h-50">
+                    <!-- Card1 -->
+                    <div class="col-sm card">
                         <h4>Nicholas Smider</h4>
                         <p class="title">Co-Founder</p>
                         <p>University of Pittsburgh</p>
                         <a href="#">
                             <i class="far fa-address-book"></i>
                         </a>
-    
-                        <p>
-                            <button>Contact</button>
-                        </p>
                     </div>
+
+                    <!-- Card2 -->
                     <div class="col-sm card">
                         <h4>Andrew Henry</h4>
                         <p class="title">Co-Founder</p>
@@ -123,16 +122,9 @@
                         <a href="#">
                             <i class="fas fa-dribbble"></i>
                         </a>
-    
-                        <p>
-                            <button>Contact</button>
-                        </p>
                     </div>
                 </div>
-              </div>
-
-
-
+            </div>
 
             <!-- Scroll Icon -->
             <div data-scroll="toggle(.landingScrollIn, .landingScrollOut) once" class="text-center scroll-icons landingScrollStart">
@@ -153,6 +145,14 @@
         <section role="services" id="services" class="services h-100">
             <div data-scroll="toggle(.fromBigTopIn, .fromBigTopOut) once" class="text-center heading font-weight-light">
                 Services
+            </div>
+
+            <div class="services-container text-center">
+                <h3 class="font-weight-light">We don't just build websites...</h3>
+                <h3 class="font-weight-light">we build more than that</h3>
+                <div id="services-banner">
+
+                </div>
             </div>
         </section>
 

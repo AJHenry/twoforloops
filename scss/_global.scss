@@ -8,6 +8,14 @@
 	opacity: 1.0;
 }
 
+.color-red{
+    color:$primary-red;
+}
+
+.background-red{
+    background: $primary-red;
+}
+
 body{
     position: relative;
 }
@@ -23,6 +31,7 @@ body {
   background: $primary-color;
   color: $primary-font; 
 }
+
 
 #container{
     height: 100%;
@@ -94,6 +103,3 @@ body {
    transition: all 0.4s ease-out;
 }
 
-a {
-    color: $primary-red;
-}

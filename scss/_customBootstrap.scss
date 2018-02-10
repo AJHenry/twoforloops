@@ -71,6 +71,8 @@ $navbar-red-toggler-border-color:  rgba($primary_red, .1) !default;
   }
   
   
+
+//Custom link color
 a { 
   color:$primary-red;
 
@@ -83,8 +85,9 @@ a:active{
   color:$primary-red;
 }
 
-
 a:visited{
   color:$primary-red;
 }
+
+
 

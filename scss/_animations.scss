@@ -79,6 +79,7 @@
  
  .fromBigTopOut
  {
+    transition: transform 2.0s ease, opacity 2.0s ease;
      opacity: 0;
      transform: scale(0.75) translateY(100px);
  }

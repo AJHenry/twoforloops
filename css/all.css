@@ -31,6 +31,12 @@
   transition: opacity 0.5s ease;
   opacity: 1.0; }
 
+.color-red {
+  color: #CC0000; }
+
+.background-red {
+  background: #CC0000; }
+
 body {
   position: relative; }
 
@@ -89,9 +95,6 @@ body {
   background: #CC0000;
   transition: all 0.4s ease-out; }
 
-a {
-  color: #CC0000; }
-
 /**
  * Animations
  transition: property | duration | timing-function | delay;
@@ -142,6 +145,7 @@ a {
   opacity: 1; }
 
 .fromBigTopOut {
+  transition: transform 2.0s ease, opacity 2.0s ease;
   opacity: 0;
   transform: scale(0.75) translateY(100px); }
 
@@ -215,6 +219,11 @@ a {
 .title {
   color: grey;
   font-size: 18px; }
+
+#services-banner {
+  background: white;
+  width: 100%;
+  height: 50px; }
 
 .navbar-red .navbar-brand {
   color: #CC0000; }
