@@ -5,6 +5,7 @@ import { Element } from 'react-scroll';
 import { Fade } from 'react-reveal';
 import './About.css';
 import andrew from './assets/andrew.jpg';
+import nick from './assets/nick.jpg';
 
 class About extends Component {
     render() {
@@ -70,9 +71,9 @@ class About extends Component {
                             <DisplayCard imgSrc={andrew} cardName="Andrew Henry" subTitle="Co-Founder" link="http://andrewh.xyz">
                                 My Name is Andrew
                                 </DisplayCard>
-                            <DisplayCard reverse imgSrc={andrew} cardName="Nick Smider" subTitle="Co-Founder" link="http://smider.info">
-                                My Name is Andrew
-                                </DisplayCard>
+                            <DisplayCard reverse imgSrc={nick} cardName="Nick Smider" subTitle="Co-Founder" link="http://smider.info">
+                                My Name is Nick
+                            </DisplayCard>
                         </Col>
                     </Row>
                 </div>
