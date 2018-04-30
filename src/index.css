@@ -1,0 +1,20 @@
+body{
+  height:100%;
+  color:#a19c9c !important;
+  font-family:Roboto !important;
+font-weight: 300 !important;
+background: #292929    
+}
+
+#root{
+  height: 100%;
+  background: #292929    
+}
+html{
+  height: 100%;
+  background: #292929    
+}
+
+.color-red{
+  color:#DC143C;
+}

@@ -1,0 +1,53 @@
+
+
+.scroll-icons {
+    margin-bottom: 20px; 
+    font-size: 3rem;
+    animation-duration: 0.75s;
+    animation-name: bounce;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+      
+      @keyframes bounce {
+        from {
+          transform: translateY(5px); }
+        to {
+      transform: translateY(-5px); } }
+
+      .landing{
+        font-weight: 200 !important;
+      }
+
+      
+.heading {
+    font-size: 2.5rem; }
+  
+  .subheading {
+    font-size: 1.5rem; }
+  
+  @media (min-width: 576px) {
+    .heading {
+      font-size: 3rem; }
+    .subheading {
+      font-size: 1.75rem; } }
+  
+  @media (min-width: 768px) {
+    .heading {
+      font-size: 4.5rem; }
+    .subheading {
+      font-size: 2.75rem; } }
+  
+  @media (min-width: 992px) {
+    .heading {
+      font-size: 5rem; }
+    .subheading {
+      font-size: 3rem; } }
+  
+  @media (min-width: 1200px) {
+    .heading {
+      font-size: 6rem; }
+    .subheading {
+      font-size: 3.5rem; } }
+  
