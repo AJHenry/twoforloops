@@ -25,6 +25,7 @@ class Services extends Component {
 
                     <hr className="style-seven" />
                     <ProjCar username={nick_github}/>
+                    <br/>
                     <ProjCar username={andrew_github}/>
                 </div>
 

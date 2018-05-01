@@ -53,7 +53,7 @@ export class ProjCar extends Component {
     eachProject(project, i){
         return (
             <div>
-                <h3>{project.title}</h3>
+                <h3 class="text-center">{project.title}</h3>
             </div>
         );
     }
