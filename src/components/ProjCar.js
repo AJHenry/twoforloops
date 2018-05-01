@@ -1,31 +1,74 @@
 import React, { Component } from 'react';
-import { Element } from 'react-scroll';
-import { Fade } from 'react-reveal';
-import './Services.css';
-import andrew from './assets/andrew.jpg';
-import nick from './assets/nick.jpg';
+import Slider from 'react-slick';
 
 export class ProjCar extends Component {
-    render() {
+    constructor(props) {
+        super(props);
+        this.state = {
+            projects: [
+                
+            ]
+        };
+        /* Format 
+        project : [
+            {
+                id: 0,
+                title: "Title",
+                description: "Desc"
+            }
+        ]
+        */
+        this.getNextNum = this.getNextNum.bind(this);
+        this.eachProject = this.eachProject.bind(this);
+        this.add = this.add.bind(this);
+    }
+    componentWillMount(){
+        console.log('mounting');
+        var self = this;
+   
+        fetch(`https://api.github.com/users/${this.props.username}/repos`)
+            .then(response=> response.json())
+            .then(json => json
+                .forEach(project => self.add(project)));
+        
+    }
+    add(projectJSON){
+        console.log('New Item');
+        console.log(projectJSON);
+        this.setState(prevState=> ({
+            projects : [
+                ...prevState.projects,
+                {
+                    id : this.getNextNum(),
+                    title : projectJSON['name'],
+                    description : projectJSON['description'],
+                }
+            ]
+        }));
+    }
+    getNextNum() {
+        this.uniqueID = this.uniqueID || 0;
+        return this.uniqueID++;
+    }
+    eachProject(project, i){
         return (
-            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                       
-                    </div>
-                    <div class="carousel-item">
-                       
-                    </div>
-                </div>
-                <a class="carousel-control-prev" href="#services"role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#services" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
+            <div>
+                <h3>{project.title}</h3>
             </div>
+        );
+    }
+    render() {
+        var settings = {
+            dots: true,
+            infinite: true,
+            speed: 500,
+            slidesToShow: 1,
+            slidesToScroll: 1
+        };
+        return (
+            <Slider {...settings}>
+                {this.state.projects.map(this.eachProject)}
+            </Slider>
         );
     }
 }

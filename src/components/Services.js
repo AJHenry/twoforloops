@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
 import { Element } from 'react-scroll';
 import { Fade } from 'react-reveal';
-import {ProjCar} from './ProjCar';
+import { ProjCar } from './ProjCar';
 import './Services.css';
 
 class Services extends Component {
     render() {
+        let nick_github = 'nicksmider';
+        let andrew_github = 'ajhenry';
         return (
             <Element id="services" className="h-100 container d-flex flex-column justify-content-between">
                 <div className="text-left header">
@@ -22,15 +24,8 @@ class Services extends Component {
                     </Fade>
 
                     <hr className="style-seven" />
-                    <ProjCar/>
-                    <br/>
-                    <Fade bottom>
-                        <div className="text-left">
-                            <h3> <span className="color-red">Past </span>Projects</h3>
-                        </div>
-                    </Fade>
-                    <hr className="style-seven" />
-                    <ProjCar/>
+                    <ProjCar username={nick_github}/>
+                    <ProjCar username={andrew_github}/>
                 </div>
 
                 <div>
