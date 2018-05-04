@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { ProjectCard } from './ProjectCard';
 import Slider from 'react-slick';
 
 export class ProjCar extends Component {
@@ -42,6 +43,7 @@ export class ProjCar extends Component {
                     id : this.getNextNum(),
                     title : projectJSON['name'],
                     description : projectJSON['description'],
+                    url : projectJSON['url']
                 }
             ]
         }));
@@ -52,18 +54,18 @@ export class ProjCar extends Component {
     }
     eachProject(project, i){
         return (
-            <div>
-                <h3 class="text-center">{project.title}</h3>
-            </div>
+            <ProjectCard title={project.title} 
+                        description={project.description}
+                        url={project.url}/>
         );
     }
     render() {
         var settings = {
             dots: true,
             infinite: true,
-            speed: 500,
-            slidesToShow: 1,
-            slidesToScroll: 1
+            speed: 200,
+            slidesToShow: 2,
+            slidesToScroll: 2
         };
         return (
             <Slider {...settings}>
