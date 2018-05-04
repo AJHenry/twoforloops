@@ -1,6 +1,6 @@
 import React from 'react';
-import { Col, Form, FormGroup, Label, Input, FormFeedback, Button } from 'reactstrap';
-import { Fade, Flip } from 'react-reveal';
+import { Form, FormGroup, Label, Input, FormFeedback, Button } from 'reactstrap';
+import { Fade } from 'react-reveal';
 
 export class ContactForm extends React.Component {
     constructor(props) {
